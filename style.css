@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+/* font-family: 'Titillium Web', sans-serif; */
+}
+
+body{
+    background-color: blue;
+}
+
+.header{
+    background-color: #cadbed;
+
+    /* background-image: url(./photos/patt.png);
+    opacity: 0.1; */
+    height: 100px;
+}
+
+div.container{
+    width: 1200px;
+    position: relative;
+}
+
+.logo-text{
+    position:absolute;
+    top: 21px;
+}
+
+a.link-logo-text{
+    font-weight: bold;
+    color: #2c71b8;
+    font-size: 42px;
+    text-decoration: none;
+}
+
+span{
+    font-weight:300;
+    color: #2c71b8;
+    font-size: 42px;
+    text-decoration: none;
+}
+
+
+.nav{
+    margin: auto;
+    width: 600px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#nav-link{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    color: #2c71b8;
+    border-left :0.1px solid #2c71b8;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#nav-link:hover{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    background-color: #2c71b8;
+    color:white;
+    border-left :0.1px solid #2c71b8;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.5s;
+}
+
+
+#nav-link-shopping{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    color: #2c71b8;
+    border-left :0.1px solid #2c71b8;
+    border-right :0.1px solid #2c71b8;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#nav-link-shopping:hover{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    background-color: #2c71b8;
+    color:white;
+    border-left :0.1px solid #2c71b8;
+    border-right :0.1px solid #2c71b8;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* .find-menu{
+    position: absolute;
+    right: 170px;
+    top: 30px;
+} */
+
+.find-menu-input{
+    position: absolute;
+    right: 70px;
+    top: 30px;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    border: 0.1px solid #2c71b8;
+    background-color: #cadbed;
+}
+
+.lupa_Btn_in_menuInput{
+    position: absolute;
+    right: 75px;
+    top: 35px;
+    z-index: 14;
+    width: 30px;
+    background-color: #2c71b8;
+    height: 30px;
+    border: 0;
+}
+
+
+.shop_Btn_in_Header{
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    /* background-color: white;
+    background-image: url(./photos/shopLogoInHeader.png); */
+}
+
+
+/* ___________________________________________________________________ */
+
+
+@media (max-width: 1200px) {
+
+    ul.nav{
+        position: absolute;
+        left: 220px;
+
+        margin: auto;
+        width: 450px;
+        height: 100px;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+
+
+    /* a#nav-link{
+        color: red;
+    } */
+
+    #nav-link{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 21px;
+        color: #2c71b8;
+        border-left :0.1px solid #2c71b8;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    
+    #nav-link-shopping{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 21px;
+        color: #2c71b8;
+        border-left :0.1px solid #2c71b8;
+        border-right :0.1px solid #2c71b8;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
