@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +15,8 @@
 <body>
     <div class="header">
         <div class="container">
-
             <div class="logo-text">
-                <a class="link-logo-text" aria-current="page" href="#">Logo<span>here</span></a>
+                <a class="link-logo-text" aria-current="page" href="#">Logo<span class="span">here</span></a>
             </div>
 
             <ul class="nav">
@@ -24,7 +24,25 @@
                     <li class="nav-item">
                         <a class="nav-link" id="nav-link" href="#">Home</a>
                       </li>
-                      <li class="nav-item dropdown">
+
+
+                      <li class="nav-item">
+                        <div class="dropdown">
+                          <a class="nav-link" id="nav-link_products" href="#">Products &#9660;</a>
+                            <div class="dropdown-content">
+                              <a href="#">Lorem ipsum dolor</a>
+                              <a href="#">Sit amet</a>
+                              <a href="#">Consectetur adipisining</a>
+                              <a class="Link4" href="#">Dolore magna aliqua
+                              <a href="#"> Ut enim ad minim veniam</a>
+                              <a href="#">Quis nostrud</a>
+                            </div>
+                          </div>
+                      </li>
+                    
+
+
+                      <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#">Action</a></li>
@@ -33,14 +51,12 @@
                           <li><hr class="dropdown-divider"></li>
                           <li><a class="dropdown-item" href="#">Separated link</a></li>
                         </ul>
-                      </li>
-
-                      <!-- Не знаю чому не працює дропдаун. 
-                      Наскільки я пам'ятаю його не треба робити на цю дз, тому він в мене і не запустився =) -->
-
-                      <!-- <li class="nav-item">
-                        <a class="nav-link" id="nav-link" href="#">Products</a>
                       </li> -->
+
+                      <!-- Не знаю чому не працює дропдаун.  -->
+
+
+
                       <li class="nav-item">
                         <a class="nav-link" id="nav-link" href="#">Payment</a>
                       </li>
@@ -65,10 +81,19 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                         <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                       </svg>
-                </button>       
+                </button>   
+                
+                <div class="kolo_with_number">4</div>
             </div>
         </div>
     </div>
+
+
+    <div class="slider_block">
+      <div class="container">
+      </div>
+    </div>
+
 
 </body>
 </html>
