@@ -231,7 +231,7 @@ a.link-logo-text{
     background-color: #2c71b8;
     width: 313px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 10;
   }
   
   .dropdown-content a {
@@ -279,7 +279,7 @@ a.link-logo-text{
     font-size: 16px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 10;
   }
   
 
@@ -300,3 +300,74 @@ a.link-logo-text{
     visibility: visible;
 }
 
+
+
+/* __________________block__3__________________________________________ */
+
+.block__3{
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+
+.linksInBlock__3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #7aa5d2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.abcde{
+    display: flex;
+    justify-content: space-between;
+}
+
+.TitleOfBlock__3{
+
+    margin-top: 10px;
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+}
+
+.selectorOfBlock__3{
+    /* position: absolute; */
+    margin-top: 20px;
+    margin-right: 0px;
+}
+
+
+#selectOfBlock__3{
+    width: 270px;
+    height: 38px;
+    /* background-color: #2c71b8; */
+    margin-left: 110px;
+    background-image: url(./photos/patt.png);
+    border-color: white;
+}
+
+.option{
+    color: white;
+}
+
+
+.blockWithCardsBlock__3{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body{
+    border: 0;
+    border-radius: 0px;
+    height: 650px;
+    background-color: #2c71b8;
+}
+
+
+.card-img-top{
+    border: 0;
+    border-radius: 0px;
+}
