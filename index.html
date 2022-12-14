@@ -28,7 +28,7 @@
 
                       <li class="nav-item">
                         <div class="dropdown">
-                          <a class="nav-link" id="nav-link_products" href="#">Products 1 &#9660;</a>
+                          <a class="nav-link" id="nav-link_products" href="#">Products&#9660;</a>
                             <div class="dropdown-content">
                               <a href="#">Lorem ipsum dolor</a>
                               <a href="#">Sit amet</a>
@@ -93,10 +93,6 @@
       <div class="container">
         <br><br><br><br>
         <br><br><br><br>
-        <h3>ksfajklsdjflksdjfkl</h3>
-        <h3>ksfajklsdjflksdjfkl</h3>
-        <h3>ksfajklsdjflksdjfkl</h3>
-        <h3>ksfajklsdjflksdjfkl</h3>
         <br><br><br><br>
         <br><br><br><br>
       </div>
@@ -107,9 +103,34 @@
     <div class="block__3">
       <div class="container">
         <div class="row">
-          <div class="col-3"></div>
+          <div class="col-3">
+            <div class="menuSboku">
+
+              <div class="background_of_menu_s_boku"></div>
+
+              <h2 class="titleInMenu_s_boku">Device type</h2>
+
+              <div class="input_first_block">
+                
+                <div class="Laptop_div">
+                  <input type="checkbox" id="Laptop" name="Laptop" checked>
+                  <label id="Laptop_label" for="Laptop">Laptop</label>
+                </div>
+
+                <div class="Tablet_div">
+                  <input type="checkbox" id="Tablet" name="Tablet">
+                  <label id="Tablet_label" for="Tablet">Tablet</label>
+                </div>
+              </div>
+
+            </div>
+          </div>
           <div class="col-9">
-            <a class="linksInBlock__3" href="#">Home Page > </a> <a class="linksInBlock__3 href="#">Products > </a> <a class="linksInBlock__3 href="#">Laptops and Tablets</a>
+
+            <div class="blockSlinkami">
+              <a class="linksInBlock__3" href="#">Home Page > </a> <a class="linksInBlock__3 href="#">Products > </a> <a class="linksInBlock__3 href="#">Laptops and Tablets</a>
+            </div>
+           
 
 
             <div class="abcde">
@@ -129,44 +150,347 @@
 
 
             <div class="blockWithCardsBlock__3">
-              <div class="card" style="width: 270px;">
-                <img src="./photos/card1photo.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">#1 Device Name</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+
+              <div class="row row-cols-3">
+                <div class="col">
+                  <div class="card" id="card" style="width: 270px;">
+
+                    <div class="photoOnCard">
+                      <button class="fullScreen">
+                        <img class="FULLsCREENbTN__img" src="./photos/FULLsCREENbTN.png" alt="FULLsCREENbTN">
+                      </button>
+
+                      <button class="favoriteBtn">
+                        <img class="favoriteBtn__img" src="./photos/favoriteBtn.png" alt="favoriteBtn">
+                      </button>
+                      <img src="./photos/card1photo.png" class="card-img-top" alt="card-img-top"">
+                    </div>
+    
+                    <div class="card-body" id="card-body">
+                      <h5 class="card-title">#1 Device Name</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    
+                      <h6 class="cardAshki"><span class="BoldText">TYPE:</span> Laptop</h6>
+                      <h6 class="cardAshki"><span class="BoldText">Screen size:</span> 7 inches</h6>
+                      <h6 class="cardAshki"><span class="BoldText">RAM:</span> 1GB</h6>
+    
+                      <div class="bigPriceOfCard">
+                        <h6 class="bigPriceOfCard_content">$599 <span class="cents">25</span></h6>
+                      </div>
+    
+                      <button class="btn_details">MORE DETAILS</button>
+                      <button class="btn_add">ADD TO CART    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg> </button>
+    
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card" id="card" style="width: 270px;">
+
+                    <div class="photoOnCard">
+                      <button class="fullScreen">
+                        <img class="FULLsCREENbTN__img" src="./photos/FULLsCREENbTN.png" alt="FULLsCREENbTN">
+                      </button>
+
+                      <button class="favoriteBtn">
+                        <img class="favoriteBtn__img" src="./photos/favoriteBtn.png" alt="favoriteBtn">
+                      </button>
+                      <img src="./photos/card2photo.png" class="card-img-top" alt="card-img-top"">
+                    </div>
+    
+                    <div class="card-body" id="card-body">
+                      <h5 class="card-title">#2 Device Name</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    
+                      <h6 class="cardAshki"><span class="BoldText">TYPE:</span> Laptop</h6>
+                      <h6 class="cardAshki"><span class="BoldText">Screen size:</span> 7 inches</h6>
+                      <h6 class="cardAshki"><span class="BoldText">RAM:</span> 1GB</h6>
+    
+                      <div class="bigPriceOfCard">
+                        <h6 class="bigPriceOfCard_content">$1250 <span class="cents">99</span></h6>
+                      </div>
+    
+                      <button class="btn_details">MORE DETAILS</button>
+                      <button class="btn_add">ADD TO CART    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg> </button>
+    
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col">
+                  <div class="card" id="card" style="width: 270px;">
+
+                    <div class="photoOnCard">
+                      <button class="fullScreen">
+                        <img class="FULLsCREENbTN__img" src="./photos/FULLsCREENbTN.png" alt="FULLsCREENbTN">
+                      </button>
+
+                      <button class="favoriteBtn">
+                        <img class="favoriteBtn__img" src="./photos/favoriteBtn.png" alt="favoriteBtn">
+                      </button>
+                      <img src="./photos/card3photo.png" class="card-img-top_card3" alt="card-img-top"">
+                    </div>
+    
+                    <div class="card-body" id="card-body">
+                      <h5 class="card-title">#3 Device Name</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    
+                      <h6 class="cardAshki"><span class="BoldText">TYPE:</span> Laptop</h6>
+                      <h6 class="cardAshki"><span class="BoldText">Screen size:</span> 7 inches</h6>
+                      <h6 class="cardAshki"><span class="BoldText">RAM:</span> 1GB</h6>
+    
+                      <div class="bigPriceOfCard">
+                        <h6 class="bigPriceOfCard_content">$399 <span class="cents">50</span></h6>
+                      </div>
+    
+                      <button class="btn_details">MORE DETAILS</button>
+                      <button class="btn_add">ADD TO CART    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg> </button>
+    
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col">
+                  <div class="card" id="card" style="width: 270px;">
+
+                    <div class="photoOnCard">
+                      <button class="fullScreen">
+                        <img class="FULLsCREENbTN__img" src="./photos/FULLsCREENbTN.png" alt="FULLsCREENbTN">
+                      </button>
+
+                      <button class="favoriteBtn">
+                        <img class="favoriteBtn__img" src="./photos/favoriteBtn.png" alt="favoriteBtn">
+                      </button>
+                      <img src="./photos/card4photo.png" class="card-img-top_card4" alt="card-img-top"">
+                    </div>
+    
+                    <div class="card-body" id="card-body">
+                      <h5 class="card-title">#4 Device Name</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    
+                      <h6 class="cardAshki"><span class="BoldText">TYPE:</span> Laptop</h6>
+                      <h6 class="cardAshki"><span class="BoldText">Screen size:</span> 7 inches</h6>
+                      <h6 class="cardAshki"><span class="BoldText">RAM:</span> 1GB</h6>
+    
+                      <div class="bigPriceOfCard">
+                        <h6 class="bigPriceOfCard_content">$599 <span class="cents">25</span></h6>
+                      </div>
+    
+                      <button class="btn_details">MORE DETAILS</button>
+                      <button class="btn_add">ADD TO CART    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg> </button>
+    
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col">
+                  <div class="card" id="card" style="width: 270px;">
+
+                    <div class="photoOnCard">
+                      <button class="fullScreen">
+                        <img class="FULLsCREENbTN__img" src="./photos/FULLsCREENbTN.png" alt="FULLsCREENbTN">
+                      </button>
+
+                      <button class="favoriteBtn">
+                        <img class="favoriteBtn__img" src="./photos/favoriteBtn.png" alt="favoriteBtn">
+                      </button>
+                      <img src="./photos/card5photo.png" class="card-img-top_card5" alt="card-img-top"">
+                    </div>
+    
+                    <div class="card-body" id="card-body">
+                      <h5 class="card-title">#5 Device Name</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    
+                      <h6 class="cardAshki"><span class="BoldText">TYPE:</span> Laptop</h6>
+                      <h6 class="cardAshki"><span class="BoldText">Screen size:</span> 7 inches</h6>
+                      <h6 class="cardAshki"><span class="BoldText">RAM:</span> 1GB</h6>
+    
+                      <div class="bigPriceOfCard">
+                        <h6 class="bigPriceOfCard_content">$1250 <span class="cents">99</span></h6>
+                      </div>
+    
+                      <button class="btn_details">MORE DETAILS</button>
+                      <button class="btn_add">ADD TO CART    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg> </button>
+    
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col">
+                  <div class="card" id="card" style="width: 270px;">
+
+                    <div class="photoOnCard">
+                      <button class="fullScreen">
+                        <img class="FULLsCREENbTN__img" src="./photos/FULLsCREENbTN.png" alt="FULLsCREENbTN">
+                      </button>
+
+                      <button class="favoriteBtn">
+                        <img class="favoriteBtn__img" src="./photos/favoriteBtn.png" alt="favoriteBtn">
+                      </button>
+                      <img src="./photos/card6photo.png" class="card-img-top_card6" alt="card-img-top"">
+                    </div>
+    
+                    <div class="card-body" id="card-body">
+                      <h5 class="card-title">#6 Device Name</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    
+                      <h6 class="cardAshki"><span class="BoldText">TYPE:</span> Laptop</h6>
+                      <h6 class="cardAshki"><span class="BoldText">Screen size:</span> 7 inches</h6>
+                      <h6 class="cardAshki"><span class="BoldText">RAM:</span> 1GB</h6>
+    
+                      <div class="bigPriceOfCard">
+                        <h6 class="bigPriceOfCard_content">$399 <span class="cents">50</span></h6>
+                      </div>
+    
+                      <button class="btn_details">MORE DETAILS</button>
+                      <button class="btn_add">ADD TO CART    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg> </button>
+    
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col">
+                  <div class="card" id="card" style="width: 270px;">
+
+                    <div class="photoOnCard">
+                      <button class="fullScreen">
+                        <img class="FULLsCREENbTN__img" src="./photos/FULLsCREENbTN.png" alt="FULLsCREENbTN">
+                      </button>
+
+                      <button class="favoriteBtn">
+                        <img class="favoriteBtn__img" src="./photos/favoriteBtn.png" alt="favoriteBtn">
+                      </button>
+                      <img src="./photos/card7photo.png" class="card-img-top" alt="card-img-top"">
+                    </div>
+    
+                    <div class="card-body" id="card-body">
+                      <h5 class="card-title">#1 Device Name</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    
+                      <h6 class="cardAshki"><span class="BoldText">TYPE:</span> Laptop</h6>
+                      <h6 class="cardAshki"><span class="BoldText">Screen size:</span> 7 inches</h6>
+                      <h6 class="cardAshki"><span class="BoldText">RAM:</span> 1GB</h6>
+    
+                      <div class="bigPriceOfCard">
+                        <h6 class="bigPriceOfCard_content">$599 <span class="cents">25</span></h6>
+                      </div>
+    
+                      <button class="btn_details">MORE DETAILS</button>
+                      <button class="btn_add">ADD TO CART    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg> </button>
+    
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="col">
+                  <div class="card" id="card" style="width: 270px;">
+
+                    <div class="photoOnCard">
+                      <button class="fullScreen">
+                        <img class="FULLsCREENbTN__img" src="./photos/FULLsCREENbTN.png" alt="FULLsCREENbTN">
+                      </button>
+
+                      <button class="favoriteBtn">
+                        <img class="favoriteBtn__img" src="./photos/favoriteBtn.png" alt="favoriteBtn">
+                      </button>
+                      <img src="./photos/card2photo.png" class="card-img-top" alt="card-img-top"">
+                    </div>
+    
+                    <div class="card-body" id="card-body">
+                      <h5 class="card-title">#2 Device Name</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    
+                      <h6 class="cardAshki"><span class="BoldText">TYPE:</span> Laptop</h6>
+                      <h6 class="cardAshki"><span class="BoldText">Screen size:</span> 7 inches</h6>
+                      <h6 class="cardAshki"><span class="BoldText">RAM:</span> 1GB</h6>
+    
+                      <div class="bigPriceOfCard">
+                        <h6 class="bigPriceOfCard_content">$1250 <span class="cents">99</span></h6>
+                      </div>
+    
+                      <button class="btn_details">MORE DETAILS</button>
+                      <button class="btn_add">ADD TO CART    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg> </button>
+    
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col">
+                  <div class="card" id="card" style="width: 270px;">
+
+                    <div class="photoOnCard">
+                      <button class="fullScreen">
+                        <img class="FULLsCREENbTN__img" src="./photos/FULLsCREENbTN.png" alt="FULLsCREENbTN">
+                      </button>
+
+                      <button class="favoriteBtn">
+                        <img class="favoriteBtn__img" src="./photos/favoriteBtn.png" alt="favoriteBtn">
+                      </button>
+                      <img src="./photos/card3photo.png" class="card-img-top_card3" alt="card-img-top"">
+                    </div>
+    
+                    <div class="card-body" id="card-body">
+                      <h5 class="card-title">#3 Device Name</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    
+                      <h6 class="cardAshki"><span class="BoldText">TYPE:</span> Laptop</h6>
+                      <h6 class="cardAshki"><span class="BoldText">Screen size:</span> 7 inches</h6>
+                      <h6 class="cardAshki"><span class="BoldText">RAM:</span> 1GB</h6>
+    
+                      <div class="bigPriceOfCard">
+                        <h6 class="bigPriceOfCard_content">$399 <span class="cents">50</span></h6>
+                      </div>
+    
+                      <button class="btn_details">MORE DETAILS</button>
+                      <button class="btn_add">ADD TO CART    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg> </button>
+    
+                    </div>
+                  </div>
                 </div>
               </div>
-
-
-
-              <div class="card" style="width: 270px;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-
-
-
-              <div class="card" style="width: 270px;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-
             </div>
-
+            <div class="loadingMore">
+              <h6 class="loadingMore_content">Load more ...</h6>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
 
+    <footer class="footer">
+      <h6 class="footer_text">© Copyright 2017</h6>
+    </footer>
 </body>
 </html>
