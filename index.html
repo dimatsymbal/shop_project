@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Project2</title>
 </head>
 <body>
@@ -24,38 +27,22 @@
                     <li class="nav-item">
                         <a class="nav-link" id="nav-link" href="#">Home</a>
                       </li>
-
-
                       <li class="nav-item">
-                        <div class="dropdown">
-                          <a class="nav-link" id="nav-link_products" href="#">Products&#9660;</a>
-                            <div class="dropdown-content">
-                              <a href="#">Lorem ipsum dolor</a>
-                              <a href="#">Sit amet</a>
-                              <a href="#">Consectetur adipisining</a>
-                              <a class="Link4" href="#">Dolore magna aliqua
-                              <a href="#"> Ut enim ad minim veniam</a>
-                              <a href="#">Quis nostrud</a>
-                            </div>
-                          </div>
+                        <li class="nav-item dropdown">
+                          <a id="nav_link_products" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                          </a>
+                          <ul id="dropdown-menu_in_nav" class="dropdown-menu">
+                            <li class="linkInDropdown_in_nav"><a class="dropdown-item_in_nav" href="#">Lorem ipsum dolor</a></li>
+                            <li class="linkInDropdown_in_nav"><a class="dropdown-item_in_nav" href="#">Sit amet</a></li>
+                            <li class="linkInDropdown_in_nav"><a class="dropdown-item_in_nav" href="#">Consectetur adipisicing</a></li>
+                            <li class="linkInDropdown_in_nav"><a class="dropdown-item_in_nav" href="#">Tempor incididunt</a></li>
+                            <li class="linkInDropdown_in_nav"><a class="dropdown-item_in_nav" href="#">Dolore magna aliqua</a></li>
+                            <li class="linkInDropdown_in_nav"><a class="dropdown-item_in_nav" href="#">Ut enim ad minim veniam</a></li>
+                            <li class="linkInDropdown_in_nav"><a class="dropdown-item_in_nav" href="#">Quis nostrud</a></li>
+                          </ul>
+                        </li>
                       </li>
-                    
-
-
-                      <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Separated link</a></li>
-                        </ul>
-                      </li> -->
-
-                      <!-- Не знаю чому не працює дропдаун.  -->
-
-
 
                       <li class="nav-item">
                         <a class="nav-link" id="nav-link" href="#">Payment</a>
@@ -87,14 +74,41 @@
             </div>
         </div>
     </div>
+    <div class="whiteline"></div>
 
 
     <div class="slider_block">
       <div class="container">
-        <br><br><br><br>
-        <br><br><br><br>
-        <br><br><br><br>
-        <br><br><br><br>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" id="buttonDown_in_slider" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" id="buttonDown_in_slider" aria-label="Slide 2" class=""></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" id="buttonDown_in_slider" aria-label="Slide 3" class="active" aria-current="true"></button>
+          </div>
+          <div class="carousel-inner">
+
+            <div class="carousel-item">
+              <h3 class="titleInSliderBlock">Slide #1</h3>
+            </div>
+
+            <div class="carousel-item">
+              <h3 class="titleInSliderBlock">Slide #2</h3>
+            </div>
+
+            <div class="carousel-item active">
+              <h3 class="titleInSliderBlock">Slide #3</h3>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -109,20 +123,40 @@
               <div class="background_of_menu_s_boku"></div>
 
               <h2 class="titleInMenu_s_boku">Device type</h2>
+              <input type="checkbox" id="Laptop" checked>
+              <label class="label_Laptop" for="Laptop">Laptop</label>
+              <input type="checkbox" id="Tablet">
+              <label class="label_Tablet" for="Tablet">Tablet</label>
 
-              <div class="input_first_block">
-                
-                <div class="Laptop_div">
-                  <input type="checkbox" id="Laptop" name="Laptop" checked>
-                  <label id="Laptop_label" for="Laptop">Laptop</label>
-                </div>
 
-                <div class="Tablet_div">
-                  <input type="checkbox" id="Tablet" name="Tablet">
-                  <label id="Tablet_label" for="Tablet">Tablet</label>
-                </div>
-              </div>
+              <h2 class="title_2_InMenu_s_boku">Color</h2>
+              <input type="checkbox" id="Black">
+              <label class="label_Black" for="Black">Black</label>
+              <input type="checkbox" id="Red">
+              <label class="label_Red" for="Red">Red</label>
+              <input type="checkbox" id="Green" checked>
+              <label class="label_Green" for="Green">Green</label>
+              <input type="checkbox" id="Blue">
+              <label class="label_Blue" for="Blue">Blue</label>
+              <input type="checkbox" id="Orange">
+              <label class="label_Orange" for="Orange">Orange</label>
 
+
+              <h2 class="title_3_InMenu_s_boku">ram</h2>
+              <input type="checkbox" id="gb1">
+              <label class="label_gb1" for="gb1">gb1</label>
+              <input type="checkbox" id="gb2">
+              <label class="label_gb2" for="gb2">gb2</label>
+              <input type="checkbox" id="gb4" checked>
+              <label class="label_gb4" for="gb4">gb4</label>
+              <input type="checkbox" id="gb6">
+              <label class="label_gb6" for="gb6">gb6</label>
+              <input type="checkbox" id="gb8">
+              <label class="label_gb8" for="gb8">gb8</label>
+
+              <button class="btn_submit_InMenu_s_boku">submit</button>
+
+              <a class="final_link_in_side_menu" href="#">Show more options ...</a>
             </div>
           </div>
           <div class="col-9">
@@ -138,12 +172,16 @@
                 <h3 class="TitleOfBlock__3">Laptops and Tablets</h3>
               </div>
               <div class="cololnka2">
-                <div class="selectorOfBlock__3">
-                  <select id="selectOfBlock__3">
-                    <option class="option" value="value1">Значение 1</option>
-                    <option class="option" value="value2">Значение 2</option>
-                    <option class="option" value="value3">Значение 3</option>
-                  </select>
+
+                <div class="dropdown">
+                  <button class="dropbtn">sort by price
+                    <img id="iconDown" src="./photos/iconDown.svg" alt="iconDown">
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">sort by name</a>
+                    <a href="#">sort by date</a>
+                    <a href="#">sort by popularity</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -156,8 +194,8 @@
                   <div class="card" id="card" style="width: 270px;">
 
                     <div class="photoOnCard">
-                      <button class="fullScreen">
-                        <img class="FULLsCREENbTN__img" src="./photos/FULLsCREENbTN.png" alt="FULLsCREENbTN">
+                      <button class="fullScreen111">
+                        <!-- <img class="FULLsCREENbTN__img" src="./photos/FULLsCREENbTN.png" alt="FULLsCREENbTN"> -->
                       </button>
 
                       <button class="favoriteBtn">
