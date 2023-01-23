@@ -5,8 +5,6 @@
 
 let prodCountEl = document.getElementById("products_count");
 let addToCartBtns = document.querySelectorAll(".btn_add");
-console.log(addToCartBtns);
-
 
 for (let i = 0; i < addToCartBtns.length; i++){
     addToCartBtns[i].addEventListener("click", function() {
@@ -20,6 +18,53 @@ addToCartBtns.forEach((addTo) =>
     addTo.classList.toggle("picked");
   })
 );
+// _______________product-quantity______________________________________________________________________
+
+let minusBtn = document.querySelectorAll(".button_minus");
+let plusBtn = document.querySelectorAll(".button_plus");
+let input = document.querySelectorAll(".input_of_quantity");
+
+
+function Counter(decrementBtn, incrementBtn, inputField){
+  this.domRefs = {
+    decrementBtn,
+    incrementBtn,
+    inputField,
+  };
+
+  this.toogleButtonsStan = function() {
+    let count = this.domRefs.inputField.value;
+    this.domRefs.decrementBtn.disabled = count <= 1;
+    this.domRefs.incrementBtn.disabled = count >= 10;
+  };
+  this.toogleButtonsStan();
+
+
+  this.increment = function(){
+    let count = +this.domRefs.inputField.value;
+    this.domRefs.inputField.value = count + 1;
+    this.toogleButtonsStan();
+  };
+
+  this.decrement = function(){
+    let count = this.domRefs.inputField.value;
+    this.domRefs.inputField.value = count - 1;
+    this.toogleButtonsStan();
+  };
+
+  this.domRefs.incrementBtn.addEventListener("click", this.increment.bind(this));
+  this.domRefs.decrementBtn.addEventListener("click", this.decrement.bind(this));
+}
+
+
+let counters = [];
+input.forEach((item,i) =>
+   (counters[i] = new Counter(minusBtn[i], plusBtn[i], item))
+)
+
+// let counter1 = new Counter(minusBtn, plusBtn, input);
+// console.log(counter1);
+
 // _______________like___________________________________________________________________________________-
 
 
@@ -96,13 +141,6 @@ $(".slider-block").slick({
 
 let scrollWind = document.querySelector(".scroll");
 
-
-// popUp.forEach((popUpBtn) => popUpBtn.addEventListener("click", function() {
-//   ladomWind.classList.add('show');
-//    })
-// );
-
-
 let closeScroll = document.querySelectorAll(".btn-close");
 
 closeScroll.forEach((closeScrollBtn) => closeScrollBtn.addEventListener("click", function() {
@@ -120,7 +158,39 @@ scrollWind.addEventListener("click", function(e){
 function showModalByScroll() {
   if(window.scrollY >= document.body.scrollHeight/2) {
     scrollWind.classList.add('show');
+    window.removeEventListener("scroll", showModalByScroll);
   }
 }
 
 window.addEventListener("scroll", showModalByScroll);
+
+
+// _______________AOS___________________________________________________________________________________
+
+
+AOS.init();
+
+
+// _______________work12______________________________________________________________________
+
+// class Car {
+//   constructor(model, color, year){
+//     this.model = model;
+//     this.color = color;
+//     this.year = year;
+
+//     this.hi = function(){
+//       console.log("hi " + this.year);
+//     }
+//   }
+//   hello = function(){
+//     console.log("Hello " + this.color);
+//   }
+// }
+
+
+// let audi = new Car("A4", "green", 1999);
+// let merc = new Car("Benz", "black", 2001);
+
+// merc.hi();
+// audi.hello();
