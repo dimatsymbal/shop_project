@@ -20,9 +20,9 @@ addToCartBtns.forEach((addTo) =>
 );
 // _______________product-quantity______________________________________________________________________
 
-let minusBtn = document.querySelectorAll(".button_minus")[1];
-let plusBtn = document.querySelectorAll(".button_plus")[1];
-let input = document.querySelectorAll(".input_of_quantity")[1];
+let minusBtn = document.querySelectorAll(".button_minus");
+let plusBtn = document.querySelectorAll(".button_plus");
+let input = document.querySelectorAll(".input_of_quantity");
 
 
 function Counter(decrementBtn, incrementBtn, inputField){
@@ -54,13 +54,16 @@ function Counter(decrementBtn, incrementBtn, inputField){
 
   this.domRefs.incrementBtn.addEventListener("click", this.increment.bind(this));
   this.domRefs.decrementBtn.addEventListener("click", this.decrement.bind(this));
-
-
-  
 }
 
-let counter1 = new Counter(minusBtn, plusBtn, input);
-console.log(counter1);
+
+let counters = [];
+input.forEach((item,i) =>
+   (counters[i] = new Counter(minusBtn[i], plusBtn[i], item))
+)
+
+// let counter1 = new Counter(minusBtn, plusBtn, input);
+// console.log(counter1);
 
 // _______________like___________________________________________________________________________________-
 
